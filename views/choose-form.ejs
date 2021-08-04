@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>choose-form</title>
+        <style>
+            .btn{
+                padding: 0.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/uploads" enctype="multipart/form-data" method="POST">
+           <div>
+               <label>Select a File</label>
+               <input type="file" name="file" required>
+           </div>
+                <input type="submit" value="Upload">
+                <br>
+                <%if(success) {%>
+                    <p> File Sucessfully Uploaded !</p>
+               <%}%>
+        </form>
+    </body>
+</html>
